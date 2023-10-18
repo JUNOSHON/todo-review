@@ -8,7 +8,7 @@ export default function AddTodo({onAdd}) {
     if (text.trim().length === 0) {
       return;
     }
-    onAdd({id: crypto.randomUUID(), text, status: "active"});
+    onAdd({id: crypto.randomUUID(), text, status: "미완료됨"});
     setText("");
   };
   return (
